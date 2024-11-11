@@ -22,6 +22,4 @@ const likeSchema = mongoose.Schema(
   { timestamps: true }
 );
 
-commentSchema.plugin(mongooseAggregatePaginate);
-
 export const Like = mongoose.model("Like", likeSchema);
